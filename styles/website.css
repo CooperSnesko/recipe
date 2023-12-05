@@ -141,9 +141,6 @@ main section{
 }
 body{background-color:var(--nav-link-color)}
 
-nav a:hover{
-    
-}
 .book, .join{background-color:var(--nav-link-color)
 }
 .book:hover, .join:hover{background-color:var(--nav-link-color)
