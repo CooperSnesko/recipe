@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');  
+
+main{
+    display: grid
+    display-grid-column 1fr 1fr 1fr;
+    grid-column: ;
+}

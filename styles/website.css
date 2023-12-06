@@ -2,6 +2,8 @@
 header {
     display: grid;
     grid-template-columns: 150px auto;
+    height: 100px;
+    margin-bottom: 40px
   }
 
 .home-grid {
@@ -31,13 +33,16 @@ header {
   #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px; 
+    margin-top: -140px; 
   }
   
   #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 100px;
+    margin-top: 130px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
   }
   
   #hero-box {
@@ -124,6 +129,7 @@ header {
     --nav-background-color: #d4660d;
     --nav-hover-link-color: rgb(196, 108, 108);
     --nav-hover-background-color: #7d0a0a;
+    --nav-trans:rgba(0, 0, 0, 0.818);
   }
 #content{
   max-width:1600px;  
@@ -134,14 +140,16 @@ nav a,
 .button-box,
 main section{
     text-align:center;
-    color: #af5c1d
+    color: #ffb57c;
 }
 #background{
     height: 725px;
 }
 body{background-color:var(--nav-link-color)}
 
-.book, .join{background-color:var(--nav-link-color)
+.book, .join{
+  text-decoration:none;
+  background-color:var(--nav-link-color)
 }
 .book:hover, .join:hover{background-color:var(--nav-link-color)
 }
@@ -152,7 +160,7 @@ footer{
 background-color:var(--nav-link-color)
 }
 nav a{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.62);
     color: #d9c2a3;
 }
 nav a:hover{
@@ -160,15 +168,15 @@ nav a:hover{
     color: #d9c2a3;
 }
 .home-title{
-    background-color: black;
+    background-color:var(--nav-trans);
     color: #d9c2a3;
 }
 h4{
-    background-color: black;
+    background-color:var(--nav-trans);
     color: #d9c2a3;
 }
 .book, .join{
-    background-color: black;
+    background-color:var(--nav-trans);
     color: #d9c2a3;
 }
 .book:hover, .join:hover{
@@ -196,13 +204,14 @@ footer a:hover{
     color: #d9c2a3;
 }
 .logo {
-    width: 80px
+    width: 120px
 }
 .icon {
     width: 80px;
 }
 #hero-img{
-    width: 100%
+    width: 100%;
+    position: absolute
 }
 nav a {
     text-align: center;
@@ -368,34 +377,26 @@ margin-top: 10px;
     margin-top: 3em;
 }
 
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  display: grid;
-  place-items: center;
-  height: 100vh;
-}
 
-.container {
+ .container {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
+} 
 
 .content {
   padding: 20px;
 }
 
 .text-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
   background-color: rgb(46, 43, 43);
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  max-width: 500px; /* Adjust the width as needed */
+  max-width: 800px;
   width: 100%;
 }

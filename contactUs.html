@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/website.css">
+    <link rel="stylesheet" href="styles/contactUs.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/The_Good_Cook_logo.png" alt="the good cook">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="site-plan.html">Site Plan</a>
+                <a href="contactUs.html">Contact Us</a>
+            </nav>
+        </header>
+
+        <div id="feedback"></div>
+
+        <main>  
+            <form action="#" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" />
+                    </li>
+                    <li>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email" />
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                </ul>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>Dry Oar &copy; 2023 - Cooper Snesko</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="contactUs.html">Contact Us</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.querySelector('form');
+
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.style.display = "block";
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
