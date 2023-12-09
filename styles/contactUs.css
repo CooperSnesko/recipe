@@ -1,7 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');  
 
-main{
-    display: grid
-    display-grid-column 1fr 1fr 1fr;
-    grid-column: ;
+
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
 }
+
+.image-container {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* Adjust the size of the inputs for name, email, and message */
+
+form ul li input,
+form ul li textarea {
+    width: 100%; /* Set the width to 100% for full width, or specify a specific width */
+    font-size: 16px; /* Adjust the font size as needed */
+    padding: 10px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Rest of your existing styles */
+
+
