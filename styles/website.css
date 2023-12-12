@@ -315,12 +315,15 @@ footer {
     nav, footer {
         flex-direction: column;
     }
+    .home-grid {
+      margin-top: 450px;
+    }
     nav a {
         display: block;
         padding: 15px;
     }
     #hero {
-        margin-top: 0;
+        margin-top: 130px;
     }
     #hero-msg {
         margin-top: 0;

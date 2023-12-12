@@ -8,6 +8,7 @@ main {
     grid-template-columns: repeat(2, 1fr); 
     gap: 20px; 
     padding: 20px; 
+    margin-top: 100px;
 }
 
 .image-container {
@@ -25,12 +26,12 @@ main {
 
 form ul li input,
 form ul li textarea {
-    width: 100%; /* Set the width to 100% for full width, or specify a specific width */
-    font-size: 16px; /* Adjust the font size as needed */
-    padding: 10px; /* Add padding for better spacing */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    width: 100%; 
+    font-size: 16px; 
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-/* Rest of your existing styles */
+
 
 
